@@ -126,12 +126,7 @@ getName(User user)
 ```
 This method retrieves the name of the group chat for a specific user.
 
-```
-```
-```
-```
-```
-```
+
 
 
 
