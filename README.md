@@ -15,3 +15,8 @@ To establistion connection with a server user has to fill out IP address of that
 Program, firslty, will ask user for an IP address in by opening "IP address validation" window 
 
 
+## Methods 
+
+
+
+
