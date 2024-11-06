@@ -19,6 +19,6 @@ Program, firslty, will ask user for an IP address in by opening "IP address vali
 ```
 start(Stage primaryStage)
 ```
-The start method is the entry point for the JavaFX application. It sets up the user interface (UI) for IP address input, validates the format and correctness of the IP address entered by the user, and provides error feedback in real-time. If the IP address is valid, it proceeds to initialize a client model with the provided IP and opens a new window for the user to enter a nickname. If the IP address is invalid, an error message is displayed.
+The start method initializes the JavaFX UI for IP address input, validates its format, and provides real-time error feedback. If valid, it creates a client model with the IP and opens a window for nickname input. If invalid, it displays an error message.
 
 
