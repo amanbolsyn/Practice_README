@@ -16,7 +16,9 @@ Program, firslty, will ask user for an IP address in by opening "IP address vali
 
 
 ## Methods 
-
+```
+start(Stage primaryStage)
+```
 
 
 
