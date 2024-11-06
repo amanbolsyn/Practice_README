@@ -51,4 +51,87 @@ openCreateChatWindow()
 ```
 This method creates and displays a new window for creating a chat. It allows the user to input a nickname, validate the input, and then call the ClientViewModel.createChat(nickname) method to create the chat. If the input is valid, it closes the window; otherwise, it shows a warning.
 
+```
+openCreateGroupChatWindow()
+```
+This method creates and displays a window for creating a new group chat. It allows the user to input the group chat name and members, validates the input, and then calls ClientViewModel.createGroup(groupChatDetails) to create the group chat. If successful, it closes the window; otherwise, it shows a warning
+
+```
+create(PersonalChat personalChat)
+```
+This method creates a new personal chat by adding it to the chats map.
+
+```
+create(GroupDecorator group)
+```
+This method creates a new group chat by adding it to the chats map.
+
+```
+getChat(int id)
+```
+This method retrieves a chat by its ID from the chats map.
+
+```
+subscribe(User user)
+```
+This method subscribes a user to the group chat by delegating the action to the wrapped Chat object.
+
+```
+unsubscribe(User user)
+```
+This method unsubscribes a user from the group chat by delegating the action to the wrapped Chat object.
+
+```
+getMessages(User user)
+```
+This method retrieves the chat messages for a specific user. It formats and sends each message in the chat's history to the user, prefixed with "group;", group ID, username, and message text.
+
+```
+getMessagesHistory()
+```
+This method retrieves the message history of the wrapped chat.
+
+```
+getUsers()
+```
+This method retrieves the list of users currently subscribed to the chat.
+
+```
+getId()
+```
+This method retrieves the ID of the group chat.
+
+```
+setGroupName(String groupName)
+```
+This method sets the name of the group chat.
+
+```
+getGroupName()
+```
+This method retrieves the name of the group chat.
+
+```
+sendMessage(Message msg)
+```
+This method sends a message to all users in the group chat (except the sender), by delegating the action to the wrapped Chat object.
+
+```
+sendCreateMessage(String msg)
+```
+This method sends a "create" message to all users in the group chat
+
+```
+getName(User user)
+```
+This method retrieves the name of the group chat for a specific user.
+
+```
+```
+```
+```
+```
+```
+
+
 
